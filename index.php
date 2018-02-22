@@ -1,56 +1,30 @@
-
-
 <?php
-
-include("loginserv.php"); // Include loginserv for checking username and password
+include("loginserv.php");
 ?>
- 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta charset="UTF-8">
-<title>Login</title>
-<style>
-.login{
-width:360px;
-margin:50px auto;
-font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-border-radius:10px;
-border:2px solid #ccc;
-padding:10px 40px 25px;
-margin-top:70px;
-}
-input[type=text], input[type=password]{
-width:99%;
-padding:10px;
-margin-top:8px;
-border:1px solid #ccc;
-padding-left:5px;
-font-size:16px;
-font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-}
-input[type=submit]{
-width:100%;
-background-color:#009;
-color:#fff;
-border:2px solid #06F;
-padding:10px;
-font-size:20px;
-cursor:pointer;
-border-radius:5px;
-margin-bottom:15px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,200" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="login">
-<h1 align="center">Login</h1>
-<form action="" method="post" style="text-align:center;">
-<input type="text" placeholder="Username" id="user" name="user"><br/><br/>
-<input type="password" placeholder="Password" id="pass" name="pass"><br/><br/>
-   <input name="submit" type="submit" value="Login" id="Login">
-   
-<!-- Error Message -->
-<span><?php echo $error; ?></span>
+<p id="findpass" >ABA Smartbags</p>
+<p id="findpass_body" >“The journey begins”</p>
+<form action="" method="post" >
+<div class="form">
+  <div class="forceColor"></div>
+  <div class="topbar">
+    <div class="spanColor"></div>
+    <input class="input" type="text" placeholder="Username" id="user" name="user">
+    <input class="input" type="password" placeholder="Password" id="pass" name="pass">
+  </div>
+  <button class="submit" name="submit" type="submit" value="Login" id="submit">Login</button>
+</div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
 </body>
 </html>
