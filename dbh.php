@@ -12,6 +12,6 @@ if($conn->connect_error){
 
 mysqli_select_db($conn,'2383683_smartbag');
 
-echo "connected to DB";
+//echo "connected to DB";
 
 ?>

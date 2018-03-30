@@ -18,7 +18,7 @@ include 'dbh.php';
   echo "before block";
  if($rows == 1){
      echo "yes";
-     header('Location: welcome.php');
+     header('Location: index.html');
      //exit();// Redirecting to other page
     }
  
